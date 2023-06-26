@@ -1,0 +1,61 @@
+<html>
+  <body style="background-color:powderblue;">
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex: 1;
+    padding: 5px;
+  }
+</style>
+<form>
+  <label for="name">Name*</label><br>
+  <input type="text" id="name" name="name" size="100"><br>
+  
+  <label for="gender">Gender*</label><br>
+  <select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br>
+
+  <div class="row">
+    <div class="col">
+  <label for="birthDay">Birth Day*</label><br>
+  <input type="number" id="birthDay" name="birthDay" min="1" max="31" required><br>
+</div>
+<div class="col">
+
+  <label for="birthMonth">Birth Month*</label><br>
+  <input type="number" id="birthMonth" name="birthMonth" min="1" max="12" required><br>
+</div>
+<div class="col">
+
+  <label for="birthYear">Birth Year*</label><br>
+  <input type="number" id="birthYear" name="birthYear" min="1900" max="2023" required><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+  <label for="birthHour">Birth Hour*</label><br>
+  <input type="number" id="birthHour" name="birthHour" min="0" max="23" required><br>
+</div>
+<div class="col">
+  <label for="birthMinute">Birth Minute*</label><br>
+  <input type="number" id="birthMinute" name="birthMinute" min="0" max="59" required><br>
+</div>
+<div class="col">
+  <label for="birthSecond">Birth Second*</label><br>
+  <input type="number" id="birthSecond" name="birthSecond" min="0" max="59" required><br>
+</div>
+</div>
+  <label for="birthPlace">Birth Place*</label><br>
+  <input type="text" id="birthPlace" name="birthPlace" size="100"><br><br>
+ <input type="Generate Horoscope" value="Generate Horoscope">
+</form>
+</body>
+</html>
